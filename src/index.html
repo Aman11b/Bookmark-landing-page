@@ -16,7 +16,27 @@
 
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
-  <body class="bg-gray-200">
-    
+  <body>
+    <!-- nav container -->
+    <nav class="container mx-auto lg:px-18 lg:py-9 px-6 py-12">
+      <!-- flex container -->
+      <div class="flex justify-between items-center">
+        <!-- logo -->
+        <div>
+          <img src="../images/logo-bookmark.svg" alt="logo" />
+        </div>
+        <!-- menu item -->
+        <div class="hidden md:flex gap-6 items-center">
+          <a href="#" class="hover:text-Red-400">Features</a>
+          <a href="#" class="hover:text-Red-400">Pricing</a>
+          <a href="#" class="hover:text-Red-400">Contact</a>
+          <button
+            class="border-2 px-6 py-1 border-Red-400 bg-Red-400 text-Grey-50 rounded [ hover:bg-Grey-50 hover:text-Red-400 ] cursor-pointer"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
