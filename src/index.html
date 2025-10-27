@@ -22,7 +22,7 @@
       <!-- flex container -->
       <div class="flex justify-between items-center">
         <!-- logo -->
-        <div class="z-1">
+        <div class="z-10">
           <img
             src="/images/logo-bookmark.svg"
             class="logo-default md:block"
@@ -48,21 +48,37 @@
         <!-- hamburger Icon -->
         <button
           id="menu-btn"
-          class="block md:hidden hamburger focus:outline-none cursor-pointer z-1"
+          class="block md:hidden hamburger focus:outline-none cursor-pointer z-10"
         >
           <img src="/images/icon-hamburger.svg" alt="" class="icon-hamburger" />
-          <img src="/images/icon-close.svg" alt="" class="icon-close hidden md:hidden" />
+          <img
+            src="/images/icon-close.svg"
+            alt=""
+            class="icon-close hidden md:hidden"
+          />
         </button>
       </div>
     </nav>
     <!-- mobile navigation -->
     <div id="menu" class="hidden md:hidden">
-      <div class="absolute flex flex-col justify-between items-center inset-0 bg-Blue-950 py-30 ">
-        <div class="flex flex-col gap-8 text-Grey-50 text-center w-[80%] mx-auto">
-          <div class="flex flex-col text-center ">
-            <a href="#" class="py-4  border-t-[0.1px] border-gray-400">Features</a>
-            <a href="#" class="py-4  border-t-[0.1px] border-gray-400">Pricing</a>
-            <a href="#" class="py-4  border-t-[0.1px] border-b-[0.1px] border-gray-400">Contact</a>
+      <div
+        class="absolute flex flex-col justify-between items-center inset-0 bg-Blue-950 py-30"
+      >
+        <div
+          class="flex flex-col gap-8 text-Grey-50 text-center w-[80%] mx-auto"
+        >
+          <div class="flex flex-col text-center">
+            <a href="#" class="py-4 border-t-[0.1px] border-gray-400"
+              >Features</a
+            >
+            <a href="#" class="py-4 border-t-[0.1px] border-gray-400"
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="py-4 border-y-[0.1px] border-gray-400"
+              >Contact</a
+            >
           </div>
           <button
             class="border-2 px-6 py-1 border-Grey-50 bg-Blue-950 text-Grey-50 rounded [ hover:bg-Grey-50 hover:text-Blue-950 ] cursor-pointer text-center"
@@ -71,9 +87,8 @@
           </button>
         </div>
         <div class="flex flex-row gap-8">
-            <a href=""><img src="/images/icon-facebook.svg" alt=""></a>
-            <a href=""> <img src="/images/icon-twitter.svg" alt=""></a>
-          </ul>
+          <a href=""><img src="/images/icon-facebook.svg" alt="" /></a>
+          <a href=""> <img src="/images/icon-twitter.svg" alt="" /></a>
         </div>
       </div>
     </div>
