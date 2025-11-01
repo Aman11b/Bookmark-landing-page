@@ -31,3 +31,20 @@ const featureContent = [
     p: "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
   },
 ];
+
+const featureImage = document.getElementById("js-features-image");
+const featureHeading = document.getElementById("js-features-heading");
+const featureParagraph = document.getElementById("js-features-paragraph");
+const buttons = document.querySelectorAll(".button");
+// console.log(buttons);
+buttons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    buttons.forEach((btn) => {
+      btn.classList.remove("border-b-4", "border-Red-400");
+    });
+    button.classList.add("border-b-4", "border-Red-400");
+    featureImage.src = `/images/illustration-features-tab-${[index + 1]}.svg`;
+    featureHeading.textContent = featureContent[index].h2;
+    featureParagraph.textContent = featureContent[index].p;
+  });
+});
