@@ -39,8 +39,10 @@ const buttons = document.querySelectorAll(".button");
 // console.log(buttons);
 buttons.forEach((button, index) => {
   button.addEventListener("click", () => {
+
     buttons.forEach((btn) => {
       btn.classList.remove("border-b-4", "border-Red-400");
+      btn.classList.remove("md:border-b-4", "md:border-Red-400");
     });
     button.classList.add("border-b-4", "border-Red-400");
     featureImage.src = `/images/illustration-features-tab-${[index + 1]}.svg`;
