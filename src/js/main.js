@@ -118,3 +118,27 @@ faqItems.forEach((item) => {
     faqButton.classList.toggle("text-red-400");
   });
 });
+
+const form = document.getElementById("emailForm");
+const emailInput = document.getElementById("emailInput");
+const emailError = document.getElementById("emailError");
+const errorIcon = document.getElementById("errorIcon");
+const inputContainer = document.querySelector(".input-container");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const emailValue = emailInput.value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(emailValue)) {
+    emailError.classList.remove("hidden");
+    errorIcon.classList.remove("hidden");
+    inputContainer.classList.add("border-2", "border-Red-400");
+  } else {
+    emailError.classList.add("hidden");
+    errorIcon.classList.add("hidden");
+    inputContainer.classList.remove("border-2", "border-Red-400");
+    emailInput.value = "";
+  }
+});
