@@ -67,6 +67,7 @@ buttons.forEach((button, index) => {
       btn.classList.remove("md:border-b-4", "md:border-Red-400");
     });
     button.classList.add("border-b-4", "border-Red-400");
+    
     featureImage.src = `./images/illustration-features-tab-${[index + 1]}.svg`;
     featureHeading.textContent = featureContent[index].h2;
     featureParagraph.textContent = featureContent[index].p;
