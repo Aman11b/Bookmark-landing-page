@@ -17,12 +17,34 @@
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
   <body class="relative w-full">
+   <!-- mobile navigation -->
+    <div id="menu" class="absolute hidden md:hidden z-99 inset-0 h-full my-auto">
+      <div class="fixed flex flex-col items-center bottom-0 bg-Blue-950 py-30 gap-20 h-full w-full">
+        <div class="flex flex-col gap-8 text-Grey-50 text-center w-[80%] mx-auto">
+          <div class="flex flex-col text-center ">
+            <a href="#" class="py-4  border-t-[0.1px] border-gray-400">Features</a>
+            <a href="#" class="py-4  border-t-[0.1px] border-gray-400">Pricing</a>
+            <a href="#" class="py-4  border-t-[0.1px] border-b-[0.1px] border-gray-400">Contact</a>
+          </div>
+          <button
+            class="border-2 px-6 py-1 border-Grey-50 bg-Blue-950 text-Grey-50 rounded [ hover:bg-Grey-50 hover:text-Blue-950 ] cursor-pointer text-center"
+          >
+            Login
+          </button>
+        </div>
+        <div class="flex flex-row gap-8 pt-8">
+            <a href=""><img src="/images/icon-facebook.svg" alt=""></a>
+            <a href=""> <img src="/images/icon-twitter.svg" alt=""></a>
+          </ul>
+        </div>
+      </div>
+    </div>
     <!-- nav container -->
     <nav class="container mx-auto lg:px-10 lg:py-9 md:px-8 md:py-6 px-6 py-12">
       <!-- flex container -->
       <div class="flex justify-between items-center">
         <!-- logo -->
-        <div class="z-10">
+        <div class="z-100">
           <img
             src="/images/logo-bookmark.svg"
             class="logo-default md:block"
@@ -30,7 +52,7 @@
           />
           <img
             src="/images/logo-bookmark-mobile.svg"
-            class="logo-mobile hidden md:hidden bg-transparent z-1000"
+            class="logo-mobile hidden fixed md:hidden bg-transparent z-1000"
             alt="logo"
           />
         </div>
@@ -48,49 +70,17 @@
         <!-- hamburger Icon -->
         <button
           id="menu-btn"
-          class="block md:hidden hamburger focus:outline-none cursor-pointer"
+          class="block md:hidden hamburger focus:outline-none cursor-pointer z-100 "
         >
           <img src="/images/icon-hamburger.svg" alt="" class="icon-hamburger" />
           <img
             src="/images/icon-close.svg"
             alt=""
-            class="icon-close hidden md:hidden z-100"
+            class="icon-close hidden fixed md:hidden right-[7%] "
           />
         </button>
       </div>
     </nav>
-
-    <!-- mobile navigation -->
-    <div id="menu" class="fixed h-full inset-0 hidden md:hidden z-100">
-      <div
-        class="flex flex-col justify-start items-center inset-0 bg-Blue-950 py-30 gap-38"
-      >
-        <div
-          class="flex flex-col gap-8 text-Grey-50 text-center w-[80%] mx-auto"
-        >
-          <div class="flex flex-col text-center">
-            <a href="#" class="py-4 border-t-[0.1px] border-gray-400"
-              >Features</a
-            >
-            <a href="#" class="py-4 border-t-[0.1px] border-gray-400"
-              >Pricing</a
-            >
-            <a href="#" class="py-4 border-y-[0.1px] border-gray-400"
-              >Contact</a
-            >
-          </div>
-          <button
-            class="border-2 px-6 py-1 border-Grey-50 bg-Blue-950 text-Grey-50 rounded [ hover:bg-Grey-50 hover:text-Blue-950 ] cursor-pointer text-center"
-          >
-            Login
-          </button>
-        </div>
-        <div class="flex flex-row gap-8">
-          <a href=""><img src="/images/icon-facebook.svg" alt="" /></a>
-          <a href=""> <img src="/images/icon-twitter.svg" alt="" /></a>
-        </div>
-      </div>
-    </div>
 
     <!-- hero section -->
     <div class="relative">
